@@ -1,7 +1,14 @@
 // Service Worker
+const url = window.location.href
+let swUrl = '/twittor/sw.js'
+
 if ( navigator.serviceWorker ) {
-    navigator.serviceWorker.register('/sw.js')
+    if (url.includes('localhost' || url.includes('127.0.0.1'))) {
+        let swUrl = '/sw.js'
+    }
+    navigator.serviceWorker.register(swUrl)
 }
+
 
 // Referencias de jQuery
 
