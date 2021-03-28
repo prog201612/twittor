@@ -3,8 +3,8 @@ const url = window.location.href
 let swUrl = '/twittor/sw.js'
 
 if ( navigator.serviceWorker ) {
-    if (url.includes('localhost' || url.includes('127.0.0.1'))) {
-        let swUrl = '/sw.js'
+    if (url.includes('localhost') || url.includes('127.0.0.1')) {
+        swUrl = '/sw.js'
     }
     navigator.serviceWorker.register(swUrl)
 }

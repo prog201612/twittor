@@ -1,16 +1,22 @@
 * {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    font-family: 'Quicksand';
-  }
-  
-  html, body {
-    margin: 0px !important;
-    color: #7f8c8d;
-    font-size: 16px;
-    background-color: #dde1e2; 
-    width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Quicksand';
+}
+
+html, body {
+  margin: 0px !important;
+  color: #7f8c8d;
+  font-size: 16px;
+  background-color: #dde1e2; 
+  width: 100%;
+
+  /* PWA */
+  overscroll-behavior-y: contain;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 /* Personalizados */
